@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="Author" content="Mohammed Ehab">
+		<!-- Meta Description -->
+		<meta name="description" content="welcome wlecome">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Investing Listing - Montalq</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+<style>/* General Styles */
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #f4f4f4;
+	}
+	
+	/* Navbar */
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 20px;
+		background-color: #fff;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+	
+	.logo img {
+		height: 40px;
+	}
+	
+	.nav-buttons button {
+		margin-left: 10px;
+		padding: 10px 15px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	
+	.sign-in {
+		background: transparent;
+		color: #a367e7;
+		border: 1px solid #a367e7;
+	}
+	
+	.join {
+		background: #a367e7;
+		color: white;
+	}
+	
+	/* Hero Section */
+	.hero {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 50px 10%;
+		background: linear-gradient(to right, #a367e7, #6610f2);
+		color: white;
+	}
+	
+	.hero-content {
+		max-width: 50%;
+	}
+	
+	.hero-content h1 {
+		font-size: 2.5rem;
+		margin-bottom: 20px;
+	}
+	
+	.hero-content p {
+		font-size: 1.2rem;
+		margin-bottom: 20px;
+	}
+	
+	.join-now {
+		background: white;
+		color: #a367e7;
+		padding: 12px 20px;
+		font-size: 1rem;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	
+	.hero-image img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	/* Features Section */
+	.features {
+		display: flex;
+		justify-content: space-around;
+		padding: 60px 10%;
+		background: white;
+	}
+	
+	.feature {
+		text-align: center;
+		max-width: 30%;
+	}
+	
+	.feature img {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	
+	.feature h3 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+		color: #a367e7;
+	}
+	
+	.feature p {
+		font-size: 1rem;
+		color: #666;
+	}
+	
+	/* Call to Action */
+	.cta {
+		text-align: center;
+		padding: 40px;
+		background: #a367e7;
+		color: white;
+	}
+	
+	.cta h2 {
+		font-size: 2rem;
+		margin-bottom: 20px;
+	}
+	
+	.cta .join-now {
+		background: white;
+		color: #a367e7;
+		padding: 12px 20px;
+		font-size: 1rem;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+.logo{
+	
+	  font-family: "Almarai", serif;
+	  font-weight: 700;
+	  font-style: normal;
+	color : #FF6100;} 
+    
+        .card-container {
+            display: flex;
+            gap: 20px;
+        }
+        .card {
+            width: 250px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .card .content {
+            padding: 15px;
+        }
+ 
+
+	</style>
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/nice-select.css">					
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>  <header id="header" id="home">
+	<div class="container">
+		<div class="row align-items-center justify-content-between d-flex">
+		  <div id="logo">
+			<a href="index.html"><h1 class="logo">Montalq</h1></a>
+		  </div>
+		  <nav id="nav-menu-container">
+			<ul class="nav-menu">
+			  <li class="menu-active"><a href="index.html">Home</a></li>
+			  <li><a href="Events.html">Events</a></li>
+			  <li><a href="Jobs.html">Jobs</a></li>
+			  <li><a href="about-us.html">About Us</a></li>
+			  <li><a class="ticker-btn" href="#">Signup</a></li>
+			  <li><a class="ticker-btn" href="#">Login</a></li>				          				          
+			</ul>
+		  </nav><!-- #nav-menu-container -->		    		
+		</div>
+	</div>
+  </header><!-- #header -->
+    <!-- Navbar -->
+  
+    
+    <!-- Hero Section -->
+    <header class="hero" style="margin-top: 100px;">
+        <div class="hero-content">
+            <h1 style="color: antiquewhite;">Get Customers, Grants, and Support for Your Startup</h1>
+            <p>Join the world’s largest startup community and unlock funding, jobs, and business growth opportunities.</p>
+            <button class="join-now">Join Montalq</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1462206092226-f46025ffe607?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGJ1c2luZXNzfGVufDB8MHwwfHx8MA%3D%3D" alt="Startup Growth">
+        </div>
+    </header>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <a href="Jobs.html"><img src="https://images.unsplash.com/photo-1611095973763-414019e72400?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGJ1c2luZXNzfGVufDB8MHwwfHx8MA%3D%3D" alt="Funding"></a>
+            <h3>Jobs</h3>
+            <p>Access grants, investors, and accelerators to fuel your startup.</p>
+        </div>
+        <div class="feature">
+            <a href="Events.html"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGJ1c2luZXNzfGVufDB8MHwwfHx8MA%3D%3D" alt="Customers"></a>
+            <h3>Events</h3>
+            <p>Connect with businesses and customers looking for your solutions.</p>
+        </div>
+        <div class="feature">
+           <a> <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fGJ1c2luZXNzfGVufDB8MHwwfHx8MA%3D%3D" alt="Support"></a>
+            <h3>About Us</h3>
+            <p>Join a network of founders, mentors, and experts to scale your business.</p>
+        </div>
+    </section>
+
+	<header class="hero" style="margin-top: 50px;margin-bottom:50px ;">
+        <div class="hero-content">
+        </div>
+    </header>
+
+    <div class="card-container align-items justify-content-center">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGJ1c2luZXNzfGVufDB8MHwwfHx8MA%3D%3D" alt="Image">
+            <div class="content">
+                <h3>The World Tradit</h3>
+                <p>Some description text for  .</p>
+            </div>
+        </div>
+		
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGJ1c2luZXNzfGVufDB8MHwwfHx8MA%3D%3D" alt="Image">
+            <div class="content">
+                <h3>The World Tradit</h3>
+                <p>Another description text for  .</p>
+            </div>
+        </div>
+		<div class="card">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGJ1c2luZXNzfGVufDB8MHwwfHx8MA%3D%3D" alt="Image">
+            <div class="content">
+                <h3>The World Tradit</h3>
+                <p>Another description text for  .</p>
+            </div>
+        </div>
+		<div class="card">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGJ1c2luZXNzfGVufDB8MHwwfHx8MA%3D%3D" alt="Image">
+            <div class="content">
+                <h3>The World Tradit</h3>
+                <p>Another description text for .</p>
+            </div>
+        </div>
+    </div>
+    <!-- Call to Action -->
+  	<!-- start footer Area -->		
+	  <footer class="footer-area section-gap" style="margin-top: 20px ;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3  col-md-12">
+					<div class="single-footer-widget">
+						<h6>Top Services</h6>
+						<ul class="footer-nav">
+							<li><a href="#">Managed StartUp</a></li>
+							<li><a href="#">Manage Reputation</a></li>
+							<li><a href="#">Power Tools</a></li>
+							<li><a href="#">Marketing StartUp</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6  col-md-12">
+					<div class="single-footer-widget newsletter">
+						<h6>Newsletter</h6>
+						<p>You can trust us. we only send promo offers, not a single spam.</p>
+						<div id="mc_embed_signup">
+							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
+
+								<div class="form-group row" style="width: 100%">
+									<div class="col-lg-8 col-md-12">
+										<input name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+										<div style="position: absolute; left: -5000px;">
+											<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+										</div>
+									</div> 
+								
+									<div class="col-lg-4 col-md-12">
+										<button class="nw-btn primary-btn">Subscribe<span class="lnr lnr-arrow-right"></span></button>
+									</div> 
+								</div>		
+								<div class="info"></div>
+							</form>
+						</div>		
+					</div>
+				</div>
+				<div class="col-lg-3  col-md-12">
+					<div class="single-footer-widget mail-chimp">
+						<h6 class="mb-20">Montalq</h6>
+						<ul class="instafeed d-flex flex-wrap">
+							<li><img src="img/i1.jpg" alt=""></li>
+							<li><img src="img/i2.jpg" alt=""></li>
+							<li><img src="img/i3.jpg" alt=""></li>
+							<li><img src="img/i4.jpg" alt=""></li>
+							<li><img src="img/i5.jpg" alt=""></li>
+							<li><img src="img/i6.jpg" alt=""></li>
+							<li><img src="img/i7.jpg" alt=""></li>
+							<li><img src="img/i8.jpg" alt=""></li>
+						</ul>
+					</div>
+				</div>						
+			</div>
+
+			<div class="row footer-bottom d-flex justify-content-between">
+				<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved   <a href="https://colorlib.com" target="_blank"></a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</p>
+				<div class="col-lg-4 col-sm-12 footer-social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-dribbble"></i></a>
+					<a href="#"><i class="fa fa-behance"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->		
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>			
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	  <script src="js/easing.min.js"></script>			
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>	
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>	
+	<script src="js/owl.carousel.min.js"></script>			
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>			
+	<script src="js/parallax.min.js"></script>		
+	<script src="js/mail-script.js"></script>	
+	<script src="js/main.js"></script>	
+</body>
+</html>
