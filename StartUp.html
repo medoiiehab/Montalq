@@ -23,6 +23,45 @@
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
 
+        <style>
+           .upload-container {
+    width: 80%;
+    max-width: 500px;
+}
+
+.upload-box {
+    background: #1E1E1E;
+    border: 1px dashed #3A3A3A;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+
+
+.upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.upload-label input {
+    display: none;
+}
+
+.upload-label img {
+    width: 24px;
+    opacity: 0.7;
+}
+
+.upload-label p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #bbb;
+}
+        </style>
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/e78f8f1093.js" crossorigin="anonymous"></script>
@@ -73,82 +112,122 @@
             </nav>
 
 
-            <!-- Hero Header Start -->
-            <div class="hero-header overflow-hidden px-5">
-                <div class="rotate-img">
-                    <img src="img/sty-1.png" class="img-fluid w-100" alt="">
-                    <div class="rotate-sty-2"></div>
-                </div>
-                <div class="row gy-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                        <p class="fs-4 mb-4 wow fadeInUp" data-wow-delay="0.5s" style="color: #1A7BFF;">A Trusted Platform for Founders.</p>
-                        <h1 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">We’re A Founders Support Hub.</h1>
-                        <p class="fs-4 mb-4 wow fadeInUp" data-wow-delay="0.5s">Accelerating growth for the next generation of founders.</p>
-                        <a href="#" style="border-radius: 0%;" class="btn btn-primary  py-3 px-5 wow fadeInUp" data-wow-delay="0.7s">Get Started</a>
-                        <i class="fa-solid px-5 fa-circle-play"></i> How We Operate 
-                    </div>
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
-                        <img src="img/main.png" class="img-fluid w-100 h-100" alt="">
-                    </div>
-                </div>
-            </div>
-            <!-- Hero Header End -->
-        </div>
         <!-- Navbar & Hero End -->
 
 
-        <!-- Service Start -->
-        <div class="container-fluid service py-5">
+         <!-- Header Start -->
+         <div class="container-fluid bg-breadcrumb">
+            <ul class="breadcrumb-animation">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">StartUp Profile</h1>
+                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active text-primary">Contact</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-fluid contact py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
-                    <h4 class="mb-1 text-primary">Let's Work</h4>
-                    <h1 class="display-5 mb-4">You Grow and Make others Grow</h1>
+                    <h4 class="text-primary mb-4">StartUp Profile</h4>
+                    <h1 class="display-5 mb-4">Create a Profile For What Will Be Great</h1>
                     <p class="mb-0">Dolor sit amet consectetur, adipisicing elit. Ipsam, beatae maxime. Vel animi eveniet doloremque reiciendis soluta iste provident non rerum illum perferendis earum est architecto dolores vitae quia vero quod incidunt culpa corporis, porro doloribus. Voluptates nemo doloremque cum.
                     </p>
                 </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item text-center rounded p-4">
-                            <div class="service-icon d-inline-block  rounded p-4 mb-4"><i style="color:#1A7BFF" class="fa-solid fa-file-invoice-dollar fa-5x    "></i></div>
-                            <div class="service-content">
-                                <h4 class="mb-4">Startup Profile</h4>
-                                <p class="mb-4">We provide a page to showcase what investors need to see. From product details to growth plans, this page helps present your startup and attract funding.
-                                   as you connect with a huge network of entrepreneurs<br> so get ready to join us.
-                                </p>
-                                <a href="#" class="btn btn-light  text-primary py-2 px-4">Read More</a>
+                <div class="row g-5 align-items-center col-lg-8">
+                    <div class=" wow fadeInLeft" data-wow-delay="0.1s">
+                        <h2 class="display-5 mb-2">StartUp Profile</h2>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                        <label for="name">StartUp Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" id="date" placeholder="Your Date" required>
+                                        <label for="date">Establishment Date</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="location" placeholder="Location" required>
+                                        <label for="location">Your Loaction</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control" id="project" placeholder="Project" required>
+                                        <label for="project">Number of Employees</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <p>Pitch Deck</p>
+                                    <div class="form-floating">
+                                        <div class="upload-box">
+                                            <label class="upload-label">
+                                                <input type="file" required>
+                                                <img src="img/paperclip-icon.png" alt="Attachment">
+                                                <p>Add an attachment (optional)</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <p>Business Plan</p>
+                                    <div class="form-floating">
+                                        <div class="upload-box">
+                                            <label class="upload-label">
+                                                <input type="file" required>
+                                                <img src="img/paperclip-icon.png" alt="Attachment">
+                                                <p>Add an attachment (optional)</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <p class="title">Pitch Video</p>
+
+                                    <div class="form-floating">
+                                        <div class="upload-box">
+                                            <label class="upload-label">
+                                                <input type="file" required>
+                                                <img src="img/paperclip-icon.png" alt="Attachment">
+                                                <p>Add an attachment (optional)</p>
+                                            </label>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                                <div class="col-12 btn">
+                                    <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item text-center rounded p-4">
-                            <div class="service-icon d-inline-block  rounded p-4 mb-4"><img src="img/bullhorn.png" style="height: 75px;"></img></div>
-                            <div class="service-content">
-                                <h4 class="mb-4">Opportunities  </h4>
-                                <p class="mb-4">We bring together all the events accelerators, and opportunities to help you at the start of your journey. Our platform provides the support and resources you need to grow and succeed. Join us and unlock your business potential.                                </p>
-                                <a href="#" class="btn btn-light  text-primary py-2 px-4">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item text-center rounded p-4">
-                            <div class="service-icon d-inline-block  rounded p-4 mb-4"><i style="color:#1A7BFF" class="fa-solid fa-5x fa-graduation-cap"></i></div>
-                            <div class="service-content">
-                                <h4 class="mb-4">Education</h4>
-                                <p class="mb-4">We provide innovative ways to learn entrepreneurship. Our platform offers interactive tools, case studies, and expert sessions to help you build a business. Start learning and turn your ideas into successful ventures.
-                                    Join Us now
-                                </p>
-                                <a href="#" class="btn btn-light  text-primary py-2 px-4">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                
-                   
+               
                
                 </div>
             </div>
         </div>
-        <!-- Service End -->
-
+        <!-- Contact End -->
 
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
@@ -179,8 +258,8 @@
                             <h4 class="mb-4 text-dark">Contact Info</h4>
                             <a href=""><i class="fa fa-map-marker-alt me-2"></i> Egypt</a>
                             <a href=""><i class="fas fa-envelope me-2"></i> HoloWorldTravel.com</a>
-                            <a href=""><i class="fas fa-phone me-2"></i> 010 333 47114</a>
-                            <a href="" class="mb-3"><i class="fas fa-phone me-2"></i> 010 055 76123</a>
+                            <a href=""><i class="fas fa-text me-2"></i> 010 333 47114</a>
+                            <a href="" class="mb-3"><i class="fas fa-text me-2"></i> 010 055 76123</a>
                             <div class="d-flex align-items-center">
                                 <i style="color:#1A7BFF" class="fas fa-share fa-2x me-2"></i>
                                 <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -210,6 +289,8 @@
             </div>
         </div>
         <!-- Copyright End -->
+
+
 
 
         <!-- Back to Top -->
