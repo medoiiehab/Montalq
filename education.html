@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Muntalq</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e78f8f1093.js" crossorigin="anonymous"></script>
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style> 
+      
+      .dropdown-container {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .w3-button {
+            width: 100%;
+            text-align: right;
+            background-color: #222;
+            color: white;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .w3-button:hover {
+            background-color: #444;
+        }
+
+        .dropdown-content {
+            display: none;
+            background: #fff;
+            border-radius: 8px;
+            margin-top: 8px;
+            padding: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .w3-ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .w3-ul li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .w3-ul li:last-child {
+            border-bottom: none;
+        }
+
+        .sub-menu-btn {
+            background: #f8f8f8;
+            color: #333;
+            padding: 8px 12px;
+            border-radius: 6px;
+            width: 100%;
+            text-align: right;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .sub-menu-btn:hover {
+            background: #ddd;
+        }
+
+        .sub-menu {
+            display: none;
+            padding-right: 15px;
+            border-right: 3px solid #444;
+            margin-top: 5px;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid header position-relative overflow-hidden p-0">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="display-6 text-primary m-0"><img style="height: 300px;size: 300px;" src="img/logo.png"></img></h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                     
+                        <a href="StartUp.html" class="nav-item nav-link">Startup Profile</a>
+                        <a href="Opportunities.html" class="nav-item nav-link">Opportunities</a>
+                        
+                        <a href="education.html" class="nav-item nav-link active">Education</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Language</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="index.html" class="dropdown-item">English</a>
+                                <a href="pricing.html" class="dropdown-item">Arabic</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-light border border-primary  text-primary py-2 px-4 me-4">Log In</a>
+                    <a href="#" class="btn btn-primary  text-white py-2 px-4">Sign Up</a>
+                </div>
+            </nav>
+
+
+        <!-- Navbar & Hero End -->
+
+   <!-- Header Start -->
+   <div class=" " style="margin-top: 50px; background-color: aliceblue;">
+   
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h3 class="display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Education</h1>
+        <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s" style="font-size: larger;color: #1A7BFF; font-weight: bold;">
+            <li class="breadcrumb-item"><a href="Education.html">Learn</a></li>
+            <li class="breadcrumb-item"><a href="test.html" class="active">Test Yourself</a></li>
+        </ol>    
+    </div>
+</div>
+<!-- Header End -->
+         <!-- Header Start -->
+        
+        <!-- Header End -->
+
+        <div class="dropdown-container">
+            <h1> 📘 خريطة تعلم ريادة الأعمال </h1>
+            <button onclick="toggleDropdown('menu1')" class="w3-button">
+                🔷 المرحلة 1: الفهم الأساسي لريادة الأعمال ▼
+            </button>
+            <div id="menu1" class="dropdown-content w3-padding">
+                <ul class="w3-ul">
+                    <li><a href="#">✅ مقدمة إلى ريادة الأعمال</a></li>
+        
+                    <li>
+                        <button class="sub-menu-btn"><a href="https://www.coursera.org/specializations/wharton-entrepreneurship">ما هي ريادة الأعمال؟ ▼ </a></button>
+                        <button class="sub-menu-btn"><a href="https://www.linkedin.com/learning/">الفرق بين رائد الأعمال ورجل الأعمال ▼ </a></button>
+                        <button class="sub-menu-btn"><a href="https://www.amazon.com/Elon-Musk-Tesla-SpaceX-Fantastic/dp/006230125X">نماذج نجاح لرياديين عالميين ومحليين ▼ </a></button>
+                    </li>
+        
+                    <li><a href="#">✅ العقلية الريادية</a></li>
+        
+                    <li>
+                        <button class="sub-menu-btn"><a href="https://www.coursera.org/learn/creative-problem-solving"> التفكير الابتكاري وحل المشكلات ▼ </a></button>
+                        <button class="sub-menu-btn"><a href="https://www.coursera.org/learn/entrepreneurial-finance-risk-management">تحمل المخاطر واتخاذ القرارات ▼ </a></button>
+                        <button class="sub-menu-btn"><a href="https://www.coursera.org/learn/resilience-uncertainty">بناء المرونة والصمود أمام التحديات ▼ </a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="dropdown-container">
+            <button onclick="toggleDropdown('menu2')" class="w3-button">
+                🔹 المرحلة 2: من الفكرة إلى المشروع ▼
+            </button>
+            <div id="menu2" class="dropdown-content w3-padding">
+                
+                <p><strong>✅ توليد الأفكار وبحث السوق</strong></p>
+                <ul class="w3-ul">
+                    <li><a href="https://www.coursera.org/learn/entrepreneurial-opportunities">▼ كيفية العثور على فكرة مشروع مربحة</a></li>
+                    <li><a href="https://www.coursera.org/learn/market-research">▼ دراسة وتحليل السوق والمنافسين</a></li>
+                    <li><a href="https://www.coursera.org/learn/customer-insights">▼ مقابلة العملاء المحتملين وفهم احتياجاتهم</a></li>
+                </ul>
+        
+                <p><strong>✅ تصميم نموذج العمل (Business Model Canvas)</strong></p>
+                <ul class="w3-ul">
+                    <li><a href="https://www.coursera.org/learn/value-proposition-design">▼ القيمة المقترحة (Value Proposition)</a></li>
+                    <li><a href="https://www.coursera.org/learn/business-model-innovation">▼ القنوات والإيرادات والتكاليف</a></li>
+                    <li><a href="https://www.coursera.org/learn/strategic-partnerships">▼ الشراكات والاستراتيجيات</a></li>
+                </ul>
+        
+                <p><strong>✅ التخطيط وإعداد خطة العمل</strong></p>
+                <ul class="w3-ul">
+                    <li><a href="https://www.coursera.org/learn/how-to-write-a-business-plan">▼ المكونات الرئيسية لخطة العمل</a></li>
+                    <li><a href="https://www.marketingcompanionshow.com/">▼ تحليل SWOT للمشروع</a></li>
+                    <li><a href="https://www.coursera.org/learn/smart-goals">▼ تحديد الأهداف والمؤشرات الرئيسية</a></li>
+                </ul>
+        
+            </div>
+        </div>
+        
+
+        <div class="dropdown-container">
+            <button onclick="toggleDropdown('menu3')" class="w3-button">
+                🔹 المرحلة 3: تأسيس المشروع وتشغيله ▼
+            </button>
+            <div id="menu3" class="dropdown-content w3-padding">
+                
+                <p><strong>✅ الجوانب القانونية والتشريعية</strong></p>
+                <ul class="w3-ul">
+                    <li><a href="https://www.coursera.org/learn/business-structures-legal-considerations">▼ تسجيل الشركة واختيار الكيان القانوني</a></li>
+                    <li><a href="https://www.coursera.org/learn/business-law">▼ الضرائب والتراخيص والعقود القانونية</a></li>
+                </ul>
+        
+                <p><strong>✅ تمويل المشروع</strong></p>
+                <ul class="w3-ul">
+                    <li><a href="https://www.coursera.org/learn/raising-startup-capital">▼ طرق تمويل المشاريع الناشئة (تمويل ذاتي، مسرعات، حاضنات، مستثمرين، قروض)</a></li>
+                    <li><a href="https://www.coursera.org/learn/pitching-your-startup">▼ إعداد عرض تقديمي قوي للمستثمرين (Pitch Deck)</a></li>
+                </ul>
+        
+                <p><strong>✅ التسويق والمبيعات</strong></p>
+                <ul class="w3-ul">
+                    <li><a href="https://www.coursera.org/learn/branding">▼ بناء العلامة التجارية والشخصية البصرية</a></li>
+                    <li><a href="https://www.coursera.org/specializations/digital-marketing">▼ استراتيجيات التسويق الرقمي والتقليدي</a></li>
+                    <li><a href="https://www.linkedin.com/learning/the-art-of-selling">▼ تقنيات البيع والإقناع</a></li>
+                </ul>
+        
+                <p><strong>✅ إدارة العمليات والتوسع</strong></p>
+                <ul class="w3-ul">
+                    <li><a href="https://www.coursera.org/learn/high-performance-teams">▼ بناء الفريق وتوزيع المهام</a></li>
+                    <li><a href="https://www.coursera.org/specializations/financial-management">▼ إدارة الموارد المالية والتدفقات النقدية</a></li>
+                    <li><a href="https://www.coursera.org/learn/growth-strategies-for-entrepreneurs">▼ استراتيجيات التوسع والنمو</a></li>
+                </ul>
+        
+            </div>
+        </div>
+        
+        <!-- FAQ Start -->
+        <div class="dropdown-container">
+            <button onclick="toggleDropdown('menu4')" class="w3-button">
+                🔹 المرحلة 4: التطوير المستمر والاستدامة ▼
+            </button>
+            <div id="menu4" class="dropdown-content w3-padding">
+                
+                <p><strong>✅ التعلم من الفشل وتطوير المشروع</strong></p>
+                <ul class="w3-ul">
+                    <li class="dropdown-arrow"><a href="https://www.coursera.org/learn/the-psychology-of-success">تحليل أسباب النجاح والفشل</a></li>
+                    <li class="dropdown-arrow"><a href="https://www.coursera.org/learn/customer-feedback-product-development">تحسين المنتج/الخدمة بناءً على ملاحظات العملاء</a></li>
+                </ul>
+        
+                <p><strong>✅ التشبيك وبناء العلاقات</strong></p>
+                <ul class="w3-ul">
+                    <li class="dropdown-arrow"><a href="https://www.reddit.com/r/entrepreneur/">الانضمام إلى مجتمعات ريادة الأعمال</a></li>
+                    <li class="dropdown-arrow"><a href="https://www.eventbrite.com/">حضور الفعاليات والمسابقات الريادية</a></li>
+                </ul>
+        
+                <p><strong>✅ متابعة الاتجاهات والتقنيات الحديثة</strong></p>
+                <ul class="w3-ul">
+                    <li class="dropdown-arrow"><a href="https://www.coursera.org/learn/ai-for-business">الذكاء الاصطناعي وريادة الأعمال</a></li>
+                    <li class="dropdown-arrow"><a href="https://www.coursera.org/learn/digital-economy">الاقتصاد الرقمي والعملات المشفرة</a></li>
+                    <li class="dropdown-arrow"><a href="https://www.coursera.org/learn/corporate-social-responsibility">الاستدامة والمسؤولية الاجتماعية</a></li>
+                </ul>
+        
+            </div>
+        </div>
+        
+        <!-- FAQ End -->
+
+
+        <!-- Footer Start -->
+         <!-- Footer Start -->
+        <div class="  text-white" style="background-color: #252525;">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-dark mb-4"><img style="margin-right: 30px;" src="img/logo.png"></img></h4>
+                            <a href="" class="text-white" id="dont"><span style="color: #1A7BFF;">Learn</span>: We provide you with the knowledge and skills needed for success.<br>
+                                <span style="color: #1A7BFF;">Grow</span>: We help you develop your potential and elevate your entrepreneurial journey.<br>
+                                <span style="color: #1A7BFF;">Lead</span>: We empower you to inspire change and drive innovation in the world of entrepreneurship. <br>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3"></div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column text-white">
+                            <h4 class="mb-4 text-dark w3-panel  text-white">Quick Links</h4>
+                            <a href="" class="text-white"> About Us</a>
+                            <a href="" class="text-white"> Contact Us</a>
+                            <a href="" class="text-white"> Privacy Policy</a>
+                            <a href="" class="text-white"> Terms & Conditions</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-dark text-white">Contact Info</h4>
+                            <a href="" class="text-white"><i class="fa fa-map-marker-alt me-2 text-white"></i> Egypt</a>
+                            <a href="" class="text-white"><i class="fas fa-envelope me-2 text-white"></i> HoloWorldTravel.com</a>
+                            <a href="" class="text-white"><i class="fas fa-phone me-2 text-white"></i> 010 333 47114</a>
+                            <a href="" class="mb-3 text-white"><i class="fas fa-phone me-2 text-white"></i> 010 055 76123</a>
+                            <div class="d-flex align-items-center">
+                                <i style="color:#1A7BFF" class="fas fa-share fa-2x me-2"></i>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Montalq</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script>
+
+
+
+function toggleDropdown(id) {
+            var element = document.getElementById(id);
+            if (element.classList.contains("w3-show")) {
+                element.classList.remove("w3-show");
+            } else {
+                element.classList.add("w3-show");
+            }
+        }
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
