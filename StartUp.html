@@ -62,6 +62,7 @@
     font-size: 14px;
     color: #bbb;
 }
+
         </style>
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -99,10 +100,10 @@
                         <a href="Opportunities.html" class="nav-item nav-link">Opportunities</a>
                         <a href="education.html" class="nav-item nav-link">Education</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Language</a>
+                             <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown" ><img src="img/internet.png" style="height: 15px;">  Language</a>
                             <div class="dropdown-menu m-0">
-                                <a href="index.html" class="dropdown-item">English</a>
-                                <a href="pricing.html" class="dropdown-item">Arabic</a>
+                                <a href="https://medoiiehab.github.io/Montalq/" class="dropdown-item">English</a>
+                                <a href="https://medoiiehab-github-io.translate.goog/Montalq/?_x_tr_sl=en&_x_tr_tl=ar&_x_tr_hl=en&_x_tr_pto=wapp" class="dropdown-item">Arabic</a>
                             </div>
                             
                         </div>
@@ -117,9 +118,71 @@
 
 
          <!-- Header Start -->
-   
+    <!-- FAQ Start -->
+    <div class="container-fluid FAQ bg-light overflow-hidden py-5">
+        <div class="container py-5">
+            <h2 class="display-6 mb-2">Why Creating a Strong Startup Profile Matters?</h2><br>
+            <P></P><br>
+            <div class="row g-5 align-items-center" >
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                   <div class="accordion" id="accordionExample" >
+                        <div class="accordion-item border-0 mb-4" >
+                            <h2 class="accordion-header" id="headingOne">
+                                <button style="background-color: #1A7BFF;color: white;" class="accordion-button rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseTOne">
+                                    Attract Investors & Partners
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body my-2">
+                                    <p>A well-structured business plan and pitch deck showcase your vision, making it easier for investors and potential partners to understand and support your startup.  .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-4">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button style="background-color: #1A7BFF;color: white;" class="accordion-button collapsed rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Enhance Credibility & Professionalism
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body my-2">
+                                    <p>A complete profile with company details, milestones, and achievements establishes trust and credibility within the entrepreneurial ecosystem.  .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button style="background-color: #1A7BFF;color: white;" class="accordion-button collapsed rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Get Expert Guidance & Refinement
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body my-2">
+                                    <p>We help you improve and refine your documents, ensuring they meet industry standards and increase your chances of securing funding and partnerships.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-4" style="margin-top: 20px;">
+                            <h2 class="accordion-header" id="Head3">
+                                <button style="background-color: #1A7BFF;color: white;" class="accordion-button collapsed rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#coll3" aria-expanded="false" aria-controls="coll3">
+                                    Unlock Growth Opportunities
+                                </button>
+                            </h2>
+                            <div id="coll3" class="accordion-collapse collapse" aria-labelledby="Head3" data-bs-parent="#accordionExample">
+                                <div class="accordion-body my-2">
+                                    <p>By listing your startup, you become visible to accelerators, incubators, and competitions, opening doors to valuable opportunities.</p>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+    <!-- FAQ End -->
         <!-- Header End -->
-
+     
 
         <!-- Contact Start --> 
         <div class="container-fluid  py-5">
@@ -129,6 +192,7 @@
                     <div class=" wow fadeInLeft" data-wow-delay="0.1s">
                        
                         <h2 class="display-5 mb-2">StartUp Profile</h2>
+                        <P>Take the Next Step – Update Your Startup Profile Today!</P>
                         <form>
                             <div class="row g-3">
                                 <div class="col-lg-12 col-xl-6">
@@ -153,6 +217,44 @@
                                     <div class="form-floating">
                                         <input type="number" class="form-control" id="project" placeholder="Project" required>
                                         <label for="project">Number of Employees</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select id="startup-category" class="w3-select ">
+                                            <option value="" disabled selected style="font-size: smaller;">Startup industry</option>
+                                            <option value="tech-startups">Tech Startups</option>
+                                            <option value="fintech">FinTech Startups</option>
+                                            <option value="healthtech">HealthTech & MedTech</option>
+                                            <option value="edtech">EdTech Startups</option>
+                                            <option value="ecommerce">E-commerce & Retail</option>
+                                            <option value="agritech">AgriTech Startups</option>
+                                            <option value="greentech">GreenTech & CleanTech</option>
+                                            <option value="travel">Travel & Tourism Startups</option>
+                                            <option value="proptech">PropTech Startups</option>
+                                            <option value="automotive">Automotive & Mobility</option>
+                                            <option value="ai">AI & Robotics</option>
+                                            <option value="gaming">Gaming & Esports</option>
+                                            <option value="biotech">BioTech & Pharma</option>
+                                            <option value="spacetech">SpaceTech Startups</option>
+                                            <option value="foodtech">FoodTech Startups</option>
+                                            <option value="legaltech">LegalTech Startups</option>
+                                            <option value="hrtech">HRTech & Recruitment</option>
+                                            <option value="cybersecurity">Cybersecurity Startups</option>
+                                            <option value="govtech">GovTech Startups</option>
+                                            <option value="martech">MarTech & AdTech</option>
+                                            <option value="insurtech">InsurTech Startups</option>
+                                            <option value="supplychain">Supply Chain & Logistics</option>
+                                            <option value="quantum">Quantum Computing</option>
+                                            <option value="fashiontech">FashionTech Startups</option>
+                                            <option value="music">Music & Entertainment</option>
+                                            <option value="fitness">Fitness & Wellness</option>
+                                            <option value="blockchain">Blockchain & Web3</option>
+                                            <option value="drones">Drone & UAV Startups</option>
+                                            <option value="sportstech">SportsTech Startups</option>
+                                            <option value="femtech">FemTech Startups</option>
+                                            <option value="deeptech">DeepTech</option>
+                                        </select>                                        
                                     </div>
                                 </div>
                                 <div class="col-12">
