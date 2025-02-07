@@ -40,6 +40,46 @@
     outline: none;
     font-family: Arial, sans-serif;
 }
+.search-container {
+    display: flex;
+        align-items: center;
+        width: 50%; /* Now takes half the width */
+        max-width: 600px;
+        min-width: 300px;
+        margin: 20px auto;
+        background: white;
+        border-radius: 50px;
+        border: 2px solid #1A7BFF; /* Brand blue */
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #search {
+        flex: 1;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        outline: none;
+    }
+
+    .search-btn {
+        background: white; /* Brand blue */
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 0 50px 50px 0;
+        transition: 0.3s;
+    }
+
+    .search-btn:hover {
+        background: white; /* Slightly darker blue */
+    }
+    @media (max-width: 768px) {
+        .search-container {
+            width: 80%; /* Adjust width on smaller screens */
+        }
+    }
 </style>
 
         <!-- Customized Bootstrap Stylesheet -->
@@ -104,40 +144,127 @@
         <div class="container-fluid blog py-5">
             <div class="container py-5">
                 
-                <div class="row g-4 justify-content-center"> 
+               
                 <div class="dropdown-container">
                     <div class="dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Type</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Organization Type</a>
                             <div class="dropdown-menu m-0">
-                                <a href="index.html" class="dropdown-item">English</a>
-                                <a href="pricing.html" class="dropdown-item">Arabic</a>
+                                <a href="#" class="dropdown-item">Incubators</a>
+                                <a href="#" class="dropdown-item">Accelerators</a>
+                                <a href="#" class="dropdown-item">Venture Capital (VC)</a>
+                                <a href="#" class="dropdown-item">Angel Investors</a>
+                                <a href="#" class="dropdown-item">Corporate Venture Capital</a>
+                                <a href="#" class="dropdown-item">Government Agencies & Grants</a>
+                                <a href="#" class="dropdown-item">Crowdfunding Platforms</a>
+                                <a href="#" class="dropdown-item">Corporate Accelerators & Innovation Labs</a>
+                                <a href="#" class="dropdown-item">Legal & Advisory Services</a>
+                                <a href="#" class="dropdown-item">Corporate Partnerships</a>
+                                <a href="#" class="dropdown-item">Research and Development Hubs</a>
+                                <a href="#" class="dropdown-item">Impact Investors</a>
+                                <a href="#" class="dropdown-item">University Programs</a>
+                                <a href="#" class="dropdown-item">Coworking Spaces</a>
                             </div>
                     </div>
                     <div class="dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Location</a>
                         <div class="dropdown-menu m-0">
-                            <a href="index.html" class="dropdown-item">Egypt</a>
-                            <a href="pricing.html" class="dropdown-item">UAE</a>
+                            <a href="#" class="dropdown-item">Cairo</a>
+                            <a href="#" class="dropdown-item">Alexandria</a>
+                            <a href="#" class="dropdown-item">Giza</a>
+                            <a href="#" class="dropdown-item">Qalyubia</a>
+                            <a href="#" class="dropdown-item">Port Said</a>
+                            <a href="#" class="dropdown-item">Suez</a>
+                            <a href="#" class="dropdown-item">Dakahlia</a>
+                            <a href="#" class="dropdown-item">Sharqia</a>
+                            <a href="#" class="dropdown-item">Beheira</a>
+                            <a href="#" class="dropdown-item">Minya</a>
+                            <a href="#" class="dropdown-item">Helwan</a>
+                            <a href="#" class="dropdown-item">Monufia</a>
+                            <a href="#" class="dropdown-item">Qena</a>
+                            <a href="#" class="dropdown-item">Asyut</a>
+                            <a href="#" class="dropdown-item">Fayoum</a>
+                            <a href="#" class="dropdown-item">Ismailia</a>
+                            <a href="#" class="dropdown-item">Aswan</a>
+                            <a href="#" class="dropdown-item">Dumyat (Damietta)</a>
+                            <a href="#" class="dropdown-item">Luxor</a>
+                            <a href="#" class="dropdown-item">Beni Suef</a>
+                            <a href="#" class="dropdown-item">Red Sea</a>
+                            <a href="#" class="dropdown-item">New Valley</a>
+                            <a href="#" class="dropdown-item">Matrouh</a>
+                            <a href="#" class="dropdown-item">North Sinai</a>
+                            <a href="#" class="dropdown-item">South Sinai</a>
+                            <a href="#" class="dropdown-item">Kafr El Sheikh</a>
+                            <a href="#" class="dropdown-item">Sohag</a>
+                            
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Market</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Industry</a>
                         <div class="dropdown-menu m-0">
-                            <a href="index.html" class="dropdown-item">Technological</a>
-                            <a href="pricing.html" class="dropdown-item">Medical</a>
-                            <a href="pricing.html" class="dropdown-item">Commercial</a>
+                            <a href="#" class="dropdown-item">Tech Startups</a>
+                            <a href="#" class="dropdown-item">FinTech Startups</a>
+                            <a href="#" class="dropdown-item">HealthTech & MedTech</a>
+                            <a href="#" class="dropdown-item">EdTech Startups</a>
+                            <a href="#" class="dropdown-item">E-commerce & Retail</a>
+                            <a href="#" class="dropdown-item">AgriTech Startups</a>
+                            <a href="#" class="dropdown-item">GreenTech & CleanTech</a>
+                            <a href="#" class="dropdown-item">Travel & Tourism Startups</a>
+                            <a href="#" class="dropdown-item">PropTech Startups</a>
+                            <a href="#" class="dropdown-item">Automotive & Mobility</a>
+                            <a href="#" class="dropdown-item">AI & Robotics</a>
+                            <a href="#" class="dropdown-item">Gaming & Esports</a>
+                            <a href="#" class="dropdown-item">BioTech & Pharma</a>
+                            <a href="#" class="dropdown-item">SpaceTech Startups</a>
+                            <a href="#" class="dropdown-item">FoodTech Startups</a>
+                            <a href="#" class="dropdown-item">LegalTech Startups</a>
+                            <a href="#" class="dropdown-item">HRTech & Recruitment</a>
+                            <a href="#" class="dropdown-item">Cybersecurity Startups</a>
+                            <a href="#" class="dropdown-item">GovTech Startups</a>
+                            <a href="#" class="dropdown-item">MarTech & AdTech</a>
+                            <a href="#" class="dropdown-item">InsurTech Startups</a>
+                            <a href="#" class="dropdown-item">Supply Chain & Logistics</a>
+                            <a href="#" class="dropdown-item">Quantum Computing</a>
+                            <a href="#" class="dropdown-item">FashionTech Startups</a>
+                            <a href="#" class="dropdown-item">Music & Entertainment</a>
+                            <a href="#" class="dropdown-item">Fitness & Wellness</a>
+                            <a href="#" class="dropdown-item">Blockchain & Web3</a>
+                            <a href="#" class="dropdown-item">Drone & UAV Startups</a>
+                            <a href="#" class="dropdown-item">SportsTech Startups</a>
+                            <a href="#" class="dropdown-item">FemTech Startups</a>
+                            <a href="#" class="dropdown-item">DeepTech</a>
+
                         </div>
                     </div>
-                    <div class="dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Investment</a>
+                    <div class="dropdown w3-hide-medium w3-hide-small">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Meeting Style</a>
                         <div class="dropdown-menu m-0">
-                            <a href="index.html" class="dropdown-item">Startup</a>
-                            <a href="pricing.html" class="dropdown-item">Stocks</a>
+                            <a href="#" class="dropdown-item">Offline</a>
+                            <a href="#" class="dropdown-item">Online</a>
                         </div>
+                    </div><br>
+                   
+                </div><div class="dropdown w3-hide-large">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Meeting Style</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="#" class="dropdown-item">Offline</a>
+                        <a href="#" class="dropdown-item">Online</a>
                     </div>
                 </div> </div>
+                
                 <div class="row g-4 justify-content-center" style="margin-top: 30px;"> 
-          
+                    <div class="row g-4 justify-content-center"> 
+
+
+                        <!-- The search bar -->
+                        <div class="search-container">
+                            <input type="text" id="search" placeholder="Search for opportunities..." />
+                            <button class="search-btn">
+                                🔍
+                            </button>
+                        </div>
+
+
+
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="blog-item">
                             <div class="blog-img">
