@@ -30,76 +30,49 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
         <style> 
-      
-      .dropdown-container {
-            max-width: 400px;
-            margin: auto;
-            background: white;
-            padding: 15px;
-            border-radius: 12px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+        
+       
+       
+        
+           /* Filter button container */
+           .filter-buttons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0; /* Light bottom border for structure */
+            padding-bottom: 5px;
         }
 
-        .w3-button {
-            width: 100%;
-            text-align: right;
-            background-color: #222;
-            color: white;
-            border-radius: 8px;
-            padding: 12px;
-            font-size: 16px;
-            transition: 0.3s;
-        }
-
-        .w3-button:hover {
-            background-color: #444;
-        }
-
-        .dropdown-content {
-            display: none;
-            background: #fff;
-            border-radius: 8px;
-            margin-top: 8px;
-            padding: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .w3-ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .w3-ul li {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .w3-ul li:last-child {
-            border-bottom: none;
-        }
-
-        .sub-menu-btn {
-            background: #f8f8f8;
-            color: #333;
-            padding: 8px 12px;
-            border-radius: 6px;
-            width: 100%;
-            text-align: right;
+        /* Filter button styles */
+        .filter-buttons button{
+            background: none;
             border: none;
+            font-size: 16px;
+            color: #a0a0a0; /* Default gray text */
             cursor: pointer;
-            font-size: 14px;
-            transition: 0.3s;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        /* Active button styles */
+        .filter-buttons button.active {
+            color: #007bff; /* Blue text for active */
+            font-weight: bold;
         }
 
-        .sub-menu-btn:hover {
-            background: #ddd;
+        /* Blue underline for active button */
+        .filter-btn.active::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #007bff;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
         }
-
-        .sub-menu {
+        .hidden {
             display: none;
-            padding-right: 15px;
-            border-right: 3px solid #444;
-            margin-top: 5px;
         }
         
         </style>
@@ -152,148 +125,306 @@
         <!-- Navbar & Hero End -->
 
    <!-- Header Start -->
-   <div class=" " style="margin-top: 50px; background-color: aliceblue;">
+   <div class=" " style="margin-top: 50px; background-color: white;">
    
     <div class="container text-center py-5" style="max-width: 900px;">
         <h3 class="display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Education</h1>
-        <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s" style="font-size: larger;color: #1A7BFF; font-weight: bold;">
-            <li class="breadcrumb-item"><a href="Education.html">Learn</a></li>
-            <li class="breadcrumb-item"><a href="test.html" class="active">Test Yourself</a></li>
-        </ol>    
+      
     </div>
 </div>
 <!-- Header End -->
          <!-- Header Start -->
         
         <!-- Header End -->
+        <h2 class="display-6 mb-2" style="margin-left: 20px;margin-top: 30px;">Skill Up with Our Sources</h2>
 
-        <div class="dropdown-container">
-            <h1> 📘 خريطة تعلم ريادة الأعمال </h1>
-            <button onclick="toggleDropdown('menu1')" class="w3-button">
-                🔷 المرحلة 1: الفهم الأساسي لريادة الأعمال ▼
-            </button>
-            <div id="menu1" class="dropdown-content w3-padding">
-                <ul class="w3-ul">
-                    <li><a href="#">✅ مقدمة إلى ريادة الأعمال</a></li>
-        
-                    <li>
-                        <button class="sub-menu-btn"><a href="https://www.coursera.org/specializations/wharton-entrepreneurship">ما هي ريادة الأعمال؟ ▼ </a></button>
-                        <button class="sub-menu-btn"><a href="https://www.linkedin.com/learning/">الفرق بين رائد الأعمال ورجل الأعمال ▼ </a></button>
-                        <button class="sub-menu-btn"><a href="https://www.amazon.com/Elon-Musk-Tesla-SpaceX-Fantastic/dp/006230125X">نماذج نجاح لرياديين عالميين ومحليين ▼ </a></button>
-                    </li>
-        
-                    <li><a href="#">✅ العقلية الريادية</a></li>
-        
-                    <li>
-                        <button class="sub-menu-btn"><a href="https://www.coursera.org/learn/creative-problem-solving"> التفكير الابتكاري وحل المشكلات ▼ </a></button>
-                        <button class="sub-menu-btn"><a href="https://www.coursera.org/learn/entrepreneurial-finance-risk-management">تحمل المخاطر واتخاذ القرارات ▼ </a></button>
-                        <button class="sub-menu-btn"><a href="https://www.coursera.org/learn/resilience-uncertainty">بناء المرونة والصمود أمام التحديات ▼ </a></button>
-                    </li>
-                </ul>
+        <div class="row g-4 justify-content-center" style="margin-left:20px;margin-top: 30px; background-color: white;"> 
+            <div class="row g-4 justify-content-center"> 
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="beginner">Beginner</button>
+                    <button class="filter-btn" data-filter="intermediate">intermediate</button>
+                    <button class="filter-btn" data-filter="expert">Expert</button>
+                </div>
+                <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s" data-category="beginner">
+                <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue">Understanding the fundamentals of entrepreneurship</h5>
+           
+                    
+                     
+                     <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                     <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                </div>
             </div>
         </div>
-        
-        <div class="dropdown-container">
-            <button onclick="toggleDropdown('menu2')" class="w3-button">
-                🔹 المرحلة 2: من الفكرة إلى المشروع ▼
-            </button>
-            <div id="menu2" class="dropdown-content w3-padding">
-                
-                <p><strong>✅ توليد الأفكار وبحث السوق</strong></p>
-                <ul class="w3-ul">
-                    <li><a href="https://www.coursera.org/learn/entrepreneurial-opportunities">▼ كيفية العثور على فكرة مشروع مربحة</a></li>
-                    <li><a href="https://www.coursera.org/learn/market-research">▼ دراسة وتحليل السوق والمنافسين</a></li>
-                    <li><a href="https://www.coursera.org/learn/customer-insights">▼ مقابلة العملاء المحتملين وفهم احتياجاتهم</a></li>
-                </ul>
-        
-                <p><strong>✅ تصميم نموذج العمل (Business Model Canvas)</strong></p>
-                <ul class="w3-ul">
-                    <li><a href="https://www.coursera.org/learn/value-proposition-design">▼ القيمة المقترحة (Value Proposition)</a></li>
-                    <li><a href="https://www.coursera.org/learn/business-model-innovation">▼ القنوات والإيرادات والتكاليف</a></li>
-                    <li><a href="https://www.coursera.org/learn/strategic-partnerships">▼ الشراكات والاستراتيجيات</a></li>
-                </ul>
-        
-                <p><strong>✅ التخطيط وإعداد خطة العمل</strong></p>
-                <ul class="w3-ul">
-                    <li><a href="https://www.coursera.org/learn/how-to-write-a-business-plan">▼ المكونات الرئيسية لخطة العمل</a></li>
-                    <li><a href="https://www.marketingcompanionshow.com/">▼ تحليل SWOT للمشروع</a></li>
-                    <li><a href="https://www.coursera.org/learn/smart-goals">▼ تحديد الأهداف والمؤشرات الرئيسية</a></li>
-                </ul>
-        
+        <div data-category="beginner" class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue"> How to generate ideas and build a business model </h5>
+                     <br>
+                     <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                      <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                </div>
             </div>
         </div>
-        
+        <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s" data-category="beginner">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue">Market research and competitor analysis </h5>
+                     <br>
+                     <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                      <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s" data-category="beginner">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue"> Bootstrapping and financial management basics </h5>
+                    <br>
+                     
+                     <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                      <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                </div>
+            </div>
+        </div>
 
-        <div class="dropdown-container">
-            <button onclick="toggleDropdown('menu3')" class="w3-button">
-                🔹 المرحلة 3: تأسيس المشروع وتشغيله ▼
-            </button>
-            <div id="menu3" class="dropdown-content w3-padding">
-                
-                <p><strong>✅ الجوانب القانونية والتشريعية</strong></p>
-                <ul class="w3-ul">
-                    <li><a href="https://www.coursera.org/learn/business-structures-legal-considerations">▼ تسجيل الشركة واختيار الكيان القانوني</a></li>
-                    <li><a href="https://www.coursera.org/learn/business-law">▼ الضرائب والتراخيص والعقود القانونية</a></li>
-                </ul>
-        
-                <p><strong>✅ تمويل المشروع</strong></p>
-                <ul class="w3-ul">
-                    <li><a href="https://www.coursera.org/learn/raising-startup-capital">▼ طرق تمويل المشاريع الناشئة (تمويل ذاتي، مسرعات، حاضنات، مستثمرين، قروض)</a></li>
-                    <li><a href="https://www.coursera.org/learn/pitching-your-startup">▼ إعداد عرض تقديمي قوي للمستثمرين (Pitch Deck)</a></li>
-                </ul>
-        
-                <p><strong>✅ التسويق والمبيعات</strong></p>
-                <ul class="w3-ul">
-                    <li><a href="https://www.coursera.org/learn/branding">▼ بناء العلامة التجارية والشخصية البصرية</a></li>
-                    <li><a href="https://www.coursera.org/specializations/digital-marketing">▼ استراتيجيات التسويق الرقمي والتقليدي</a></li>
-                    <li><a href="https://www.linkedin.com/learning/the-art-of-selling">▼ تقنيات البيع والإقناع</a></li>
-                </ul>
-        
-                <p><strong>✅ إدارة العمليات والتوسع</strong></p>
-                <ul class="w3-ul">
-                    <li><a href="https://www.coursera.org/learn/high-performance-teams">▼ بناء الفريق وتوزيع المهام</a></li>
-                    <li><a href="https://www.coursera.org/specializations/financial-management">▼ إدارة الموارد المالية والتدفقات النقدية</a></li>
-                    <li><a href="https://www.coursera.org/learn/growth-strategies-for-entrepreneurs">▼ استراتيجيات التوسع والنمو</a></li>
-                </ul>
-        
+
+
+
+        <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s" data-category="beginner">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue">Basics of digital marketing and sales</h5>
+                    
+                     <br>
+                    <br><a class="btn btn-light   py-2 px-4"  href="#">Start Now</a>
+                      <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                  
+                </div>
             </div>
         </div>
-        
-        <!-- FAQ Start -->
-        <div class="dropdown-container">
-            <button onclick="toggleDropdown('menu4')" class="w3-button">
-                🔹 المرحلة 4: التطوير المستمر والاستدامة ▼
-            </button>
-            <div id="menu4" class="dropdown-content w3-padding">
-                
-                <p><strong>✅ التعلم من الفشل وتطوير المشروع</strong></p>
-                <ul class="w3-ul">
-                    <li class="dropdown-arrow"><a href="https://www.coursera.org/learn/the-psychology-of-success">تحليل أسباب النجاح والفشل</a></li>
-                    <li class="dropdown-arrow"><a href="https://www.coursera.org/learn/customer-feedback-product-development">تحسين المنتج/الخدمة بناءً على ملاحظات العملاء</a></li>
-                </ul>
-        
-                <p><strong>✅ التشبيك وبناء العلاقات</strong></p>
-                <ul class="w3-ul">
-                    <li class="dropdown-arrow"><a href="https://www.reddit.com/r/entrepreneur/">الانضمام إلى مجتمعات ريادة الأعمال</a></li>
-                    <li class="dropdown-arrow"><a href="https://www.eventbrite.com/">حضور الفعاليات والمسابقات الريادية</a></li>
-                </ul>
-        
-                <p><strong>✅ متابعة الاتجاهات والتقنيات الحديثة</strong></p>
-                <ul class="w3-ul">
-                    <li class="dropdown-arrow"><a href="https://www.coursera.org/learn/ai-for-business">الذكاء الاصطناعي وريادة الأعمال</a></li>
-                    <li class="dropdown-arrow"><a href="https://www.coursera.org/learn/digital-economy">الاقتصاد الرقمي والعملات المشفرة</a></li>
-                    <li class="dropdown-arrow"><a href="https://www.coursera.org/learn/corporate-social-responsibility">الاستدامة والمسؤولية الاجتماعية</a></li>
-                </ul>
-        
+        <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s" data-category="intermediate">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue">Operations management and hiring the right team </h5>
+                     <br>
+                     <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                     <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                </div>
             </div>
         </div>
-        
-        <!-- FAQ End -->
+        <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s" data-category="intermediate">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue">Securing funding from incubators and accelerators </h5>
+                   <br>
+                    <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                     <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s" data-category="intermediate">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue">Branding and advanced marketing strategies </h5>
+                        <br>
+                    <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                     <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                  
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s" data-category="intermediate">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue"> Cash flow optimization and profitability </h5>
+                        <br>
+                    <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                     <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                  
+                </div>
+            </div>
+        </div>   <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s" data-category="intermediate">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue">Developing growth and expansion strategies </h5>
+                        <br>
+                    <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                     <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                  
+                </div>
+            </div>
+        </div>   <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s" data-category="expert">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue"> Regional and international expansion strategies </h5>
+                        <br>
+                    <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                     <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                  
+                </div>
+            </div>
+        </div>   <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s" data-category="expert">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue">Investing in other startups </h5>
+                        <br><br>
+                    <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                     <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                  
+                </div>
+            </div>
+        </div>   <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s" data-category="expert">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue">Sustainability and corporate social responsibility (CSR) </h5>
+                        <br>
+                    <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                     <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                  
+                </div>
+            </div>
+        </div>   <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s" data-category="expert">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue"> Exit strategies such as acquisition or IPO </h5>
+                        <br>
+                    <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                     <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                  
+                </div>
+            </div>
+        </div>   <div class="col-md-6 program-card col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s" data-category="expert">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="img/ch.png" class="img-fluid w-100" alt="">
+                    <div class="blog-info">
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-content text-dark border p-4 ">
+                    <h5 class="mb-4 w3-panel w3-leftbar w3-border-blue">Leveraging AI & Web3 technologies in business </h5>
+                        <br>
+                    <br><a class="btn btn-light   py-2 px-4" href="#">Start Now</a>
+                     <img src="img/bookmark-white.png" style="margin-left: 90px; width: 30px;">
+                  
+                </div>
+            </div>
+        </div>      
+    </div>
+</div>
+</div>
+<!-- Blog End -->
+
 
 
         <!-- Footer Start -->
          <!-- Footer Start -->
-        <div class="  text-white" style="background-color: #252525;">
+        <div class="  text-white" style="background-color: #252525; margin-top: 50px;">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6 col-xl-3">
@@ -367,17 +498,28 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".filter-btn");
+            const cards = document.querySelectorAll(".program-card");
 
+            buttons.forEach(button => {
+                button.addEventListener("click", () => {
+                    // Remove active class from all buttons
+                    buttons.forEach(btn => btn.classList.remove("active"));
+                    button.classList.add("active");
 
+                    const filter = button.getAttribute("data-filter");
 
-function toggleDropdown(id) {
-            var element = document.getElementById(id);
-            if (element.classList.contains("w3-show")) {
-                element.classList.remove("w3-show");
-            } else {
-                element.classList.add("w3-show");
-            }
-        }
+                    cards.forEach(card => {
+                        if (filter === "all" || card.getAttribute("data-category") === filter) {
+                            card.classList.remove("hidden");
+                        } else {
+                            card.classList.add("hidden");
+                        }
+                    });
+                });
+            });
+        });
     </script>
 
     <!-- Template Javascript -->
