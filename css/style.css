@@ -530,8 +530,6 @@
     bottom: 100px;
     width: 58px;
     height: 50px;
-    background: url(../img/sty-1.png) center center no-repeat;
-    animation: RotateMoveSty-3 45s linear infinite;
     transition: 0.5s;
     z-index: -1;
     
@@ -557,7 +555,6 @@
     border-radius: 150px;
     border: 30px solid rgba(102, 16, 242, 0.05);
     background: transparent;
-    animation: RotateMoveSty-4 45s linear infinite;
     transition: 0.5s;
     z-index: -1;
     
@@ -587,9 +584,7 @@
     width: 50px;
     height: 50px;
     border-radius: 30px;
-    border: 5px solid rgba(247, 71, 128, 0.1);
     background: transparent;
-    animation: RotateMoveSty-2 45s linear infinite;
     transition: 0.5s;
 
 }
